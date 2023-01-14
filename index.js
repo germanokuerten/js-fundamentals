@@ -983,7 +983,6 @@ function countTruthy(array) {
     console.log('answer:', arr.length)
 }
 
-
 // Mosh's solution:
 
 countTruthy2(array)
@@ -1001,3 +1000,34 @@ function countTruthy2(array) {
 
 // 16. Exercise 7 - String Properties
 
+const movie2 = { 
+    title: "Familia",
+    release: 2020,
+    rating: 5,
+    director: "Germano Kuerten"
+}
+
+// Function returning string properties
+
+showProperties(movie2)
+
+function showProperties(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'string')
+            console.log(key, obj[key])
+}
+
+// Function returning number properties
+
+showProperties2(movie2)
+
+function showProperties2(obj) {
+    for (let key in obj)
+        if (typeof obj[key] === 'number')
+            console.log(key, obj[key])
+}
+
+
+///////////////////
+
+// 16. Exercise 7 - String Properties
