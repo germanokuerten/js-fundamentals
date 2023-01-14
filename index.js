@@ -1030,4 +1030,23 @@ function showProperties2(obj) {
 
 ///////////////////
 
-// 16. Exercise 7 - String Properties
+// 17. Exercise 8 - Sum of Multiples of 3 and 5
+
+console.log(sum2(10))
+
+
+
+function sum2(limit) {
+    // initialize sum
+    let sum = 0;
+
+    // loop and get modulus of 3 and 5 === 0
+    for (i = 0; i <= limit; i++) {
+        if (i % 3 === 0 || i % 5 ===0)
+    
+    // sum up the remainders to 'sum' variable
+        sum += i
+    }
+    // return sum
+    return sum
+}
