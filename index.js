@@ -1055,7 +1055,7 @@ function sum2(limit) {
 
 ///////////////////
 
-// 18. Exercise 8 - Grade
+// 18. Exercise 9 - Grade
 
 // Average = 70
 
@@ -1108,3 +1108,80 @@ function calculateAverage(array) {
 }
 
 
+// 19 - Exercise 10 - Stars
+
+showStars(10)
+
+function showStars(rows) {
+    // for (let row = 1; row <= rows; row++) {
+        let pattern = ''
+        for (let i = 0; i < rows; i++){
+            pattern += '*'
+            console.log(pattern)
+        }
+    }
+
+
+// 20 - Exercise - Prime Numbers
+
+// Prime (whose factors are only 1 and itself)
+// Composite
+
+// Ex:
+// 12 = 1, 2, 3, 4, 6, 12
+// Can be divided evenly by its factors
+
+// 11 = 1, 11
+// 13 = 1, 13
+
+showPrimes(20)
+
+
+function showPrimes(limit) {
+    for (let num = 2; num <= limit; num++) {
+        isPrime(num)
+    }
+}
+
+function isPrime(num) {
+    let isPrime = true
+        for (let factor = 2; factor < num; factor++) {
+            if (num % factor === 0) {
+                return false
+            }
+        }   
+        if (isPrime) console.log(num)
+}
+
+
+///////////////////
+
+
+///////////////////
+// Objects
+///////////////////
+
+// 1. Basics
+
+// defining an object using the object literal syntax
+// the purpose of an object, is to group related variables
+
+// Object oriented (style) programming (or OOP)
+// (a collection of objects that talk to each other to perform some functionality)
+
+// here we have properties and a function, and in OOP if a function is inside of an object we call that function a "method"
+
+const circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 1,
+    },
+    isVisible: true,
+    draw: function() {
+        console.log('draw')
+    }
+}
+
+// So this is the .draw() method
+circle.draw()
