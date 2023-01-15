@@ -1055,7 +1055,7 @@ function sum2(limit) {
 
 ///////////////////
 
-// 18. Exercise 8 - Sum of Multiples of 3 and 5
+// 18. Exercise 8 - Grade
 
 // Average = 70
 
@@ -1106,4 +1106,5 @@ function calculateAverage(array) {
     }
     return (average /= array.length)
 }
+
 
