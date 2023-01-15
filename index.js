@@ -1042,7 +1042,7 @@ function sum2(limit) {
 
     // loop and get modulus of 3 and 5 === 0
     for (i = 0; i <= limit; i++) {
-        if (i % 3 === 0 || i % 5 ===0)
+        if (i % 3 === 0 || i % 5 === 0)
     
     // sum up the remainders to 'sum' variable
         sum += i
@@ -1050,3 +1050,60 @@ function sum2(limit) {
     // return sum
     return sum
 }
+
+
+
+///////////////////
+
+// 18. Exercise 8 - Sum of Multiples of 3 and 5
+
+// Average = 70
+
+// 1 - 59: F
+// 60 - 69: D
+// 70 - 79: C
+// 80 - 89: B
+// 90 - 100: A
+
+const marks = [60, 60, 59]
+
+console.log(calculateGrade(marks))
+
+function calculateGrade(marks) {
+    let average = 0;
+    for(let grade of marks) {
+        average += grade
+    }
+    average /= marks.length
+    if (average < 60) return 'F'
+    if (average >= 60 && average < 70) return 'D'
+    if (average >= 70 && average < 80) return 'C'
+    if (average >= 80 && average < 90) return 'B'
+    else return 'A'
+}
+
+// Mosh's solution
+
+// divide into 2 functions (single responsibility principle)
+// we should have functions that are small and focused only on 1 thing.
+
+console.log(calculateGrade2(marks))
+
+function calculateGrade2(marks) {
+    const average = calculateAverage(marks)
+    
+    if (average < 60) return 'F'
+    if (average < 70) return 'D'
+    if (average < 80) return 'C'
+    if (average < 90) return 'B'
+    else return 'A'
+}
+
+function calculateAverage(array) {
+    let average = 0;
+    for(let value of array) {
+        average += value
+    }
+    return (average /= array.length)
+}
+
