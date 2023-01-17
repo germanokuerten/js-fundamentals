@@ -1171,7 +1171,8 @@ function isPrime(num) {
 
 // here we have properties and a function, and in OOP if a function is inside of an object we call that function a "method"
 
-const circle = {
+
+const circleExample = {
     radius: 1,
     location: {
         x: 1,
@@ -1183,5 +1184,84 @@ const circle = {
     }
 }
 
+
 // So this is the .draw() method
-circle.draw()
+circleExample.draw()
+
+
+// 2. Factory Functions
+
+// A factory is a function that returns an object, and a class is a template for an object.
+
+// Basically the idea here is to create a function that returns an object, that way you can modify parameters each time you assign that function to a new variable thus creating a new object.
+
+// Camel Notation: oneTwoThreeFour
+
+
+function createCircle(radius) {
+    const circle = {
+        // radius: radius, (or you can write radius (since it's the same name))
+        radius: radius,
+        draw() {
+            console.log('draw')
+        }
+
+        // Ps. Same as code above
+        // draw: function() {
+        //     console.log('draw')
+        // }
+    }
+    return circle
+}
+
+const circle1 = createCircle(2)
+circle1.draw()
+console.log(circle1)
+
+
+// 3. Constructor Function (uses Pascal Notation by convention)
+
+// Ps. Factory Functions and Constructor Functions are basically the same shit at the end, it's just "built"/coded differently. (my personal favourite is Factory Functions)
+
+// Pascal Notation: OneTwoThreeFour
+
+function Circle(radius, location) {
+    // "this" references an empty object
+    this.radius = radius;
+    this.location = location
+    this.draw = function() {
+        console.log('draw')
+    }
+}
+
+const circle3 = new Circle(1)
+console.log(circle3)
+
+////////////
+
+// Example practice
+
+// constructor function (Pascal Notation)
+
+function ExemploDevs1(x, y) {
+    this.algumaCoisa = x
+    this.algumaCoisa2 = y
+}
+
+const exemploDevsNovo = new ExemploDevs1(1, 5)
+console.log('1', exemploDevsNovo)
+
+// ou
+
+// factory function (Camel Case Notation)
+
+function exemploDevs2(x) {
+    const algumaCoisa = {
+        x: x,
+    }
+    return algumaCoisa
+}
+
+const exemploDevsNovo2 = exemploDevs2(3)
+console.log('2', exemploDevsNovo2)
+
