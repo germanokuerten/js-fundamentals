@@ -1431,5 +1431,33 @@ const circle1000 = {
     radius: 1,
     draw() {
         console.log('draw')
-    }
+    },
+    height: []
 }
+
+// Easiest way (for in loop): (my prefered method of iterating over an object)
+
+// iterates over all the properties and methods of an object.
+
+for (let key in circle1000)
+    // and to get value of a property, use bracket notation.
+    console.log(key, circle1000[key])
+
+///
+
+// Alternative methods (using for of loop):
+
+// Objects are not iterable, so Objects.keys returns an array (string[]). And since arrays are iterable we can use the For Of loop to iterate it.
+
+// .key() is a method built in the Objects constructor function.
+for (let key of Object.keys(circle1000))
+    console.log('object.keys():', key)
+
+// or you can iterate using Object.entries method. Instead of returning the keys as a string array it returns each key value pair as an array. (in the returned array, the first element is the key, and the 2nd element is the value).
+
+for (let entry of Object.entries(circle1000))
+    console.log('Object.entries():', entry)
+
+// To see if a given property or method exists:
+
+if ('draw' in circle1000) console.log('yes')
