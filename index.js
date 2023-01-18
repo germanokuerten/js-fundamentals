@@ -1504,3 +1504,15 @@ console.log('new copy 2:', newCircle2001)
 
 const newCircle2002 = { ...circle2000, ...circle3000 }
 console.log('new copy 3:', newCircle2002);
+
+
+////////////
+
+// 10. Garbage Collection
+
+// Note: in low level languages like C or C++, when creating an object you need to allocate memory to it, and when you are done you need to de-allocate memory. But in JS it is done automatically.
+
+// In JS when you create an object, memory is automatically allocated to that object. JS engine has what is called a Garbage Collector. (it finds constants and variables that are no longer used, and deallocate the memory).
+
+let circle5000 = {}
+console.log(circle5000)
