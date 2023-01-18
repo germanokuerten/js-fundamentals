@@ -1461,3 +1461,26 @@ for (let entry of Object.entries(circle1000))
 // To see if a given property or method exists:
 
 if ('draw' in circle1000) console.log('yes')
+
+
+////////////
+
+// 9. Cloning an Object 
+
+// copy all the properties from an object, and copy into another object.
+
+const circle2000 = {
+    radius: 1,
+    draw() {
+        console.log('draw')
+    },
+    height: []
+}
+
+const circle3000 = {
+    radius: 2,
+    draw() {
+        console.log('paint')
+    },
+    height: []
+}
