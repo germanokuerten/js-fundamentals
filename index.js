@@ -1265,3 +1265,75 @@ function exemploDevs2(x) {
 const exemploDevsNovo2 = exemploDevs2(3)
 console.log('2', exemploDevsNovo2)
 
+
+/////////////
+
+// 4. Objects are dynamic
+
+// Once you create them, you can always add or remove properties and or functions/methods
+
+const circle = {
+    radius: 1,
+}
+
+// to add properties
+
+circle.color = 'red'
+circle.height = 55
+
+// to add a function/method
+
+circle.draw = function() {
+    console.log('draw')
+}
+
+
+// to delete
+
+delete circle.color
+
+delete circle.draw
+
+console.log(circle)
+
+
+
+
+
+/////////////
+
+// 4. Constructor Property
+
+// Note: Every object in JS has a constructor property.
+// And that references the function that was used to create that object.
+
+
+function createNewCircle(radius) {
+    return {
+        radius,
+        draw: function() {
+            console.log('draw again')
+        }
+    }
+}
+
+const newCircle = new createNewCircle(1)
+
+console.log(newCircle.constructor)
+
+//
+
+let newObject = {}
+
+// JS engine: let newObject = new Object()
+
+console.log(newObject)
+
+// other example of built in constructors in JS
+
+new String() // '', "", ``, (string literals)
+
+new Boolean() // true, false (boolean literals)
+
+new Number() // 1, 2, 3, ...
+
