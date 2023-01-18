@@ -1470,11 +1470,13 @@ if ('draw' in circle1000) console.log('yes')
 // copy all the properties from an object, and copy into another object.
 
 const circle2000 = {
-    radius: 1,
+    radius: 3,
     draw() {
         console.log('draw')
     },
-    height: []
+    height: [7,1],
+    something: 3,
+    somethingElse: 7
 }
 
 const circle3000 = {
@@ -1482,5 +1484,23 @@ const circle3000 = {
     draw() {
         console.log('paint')
     },
-    height: []
+    height: [1],
+    something: 5
 }
+
+// 1. 1st way (old way):
+
+const newCircle2000 = {}
+for (let key in circle2000) 
+    newCircle2000[key] = circle2000[key] 
+console.log('new copy 1:', newCircle2000)
+
+// 2. using Object.assign()
+
+const newCircle2001 = Object.assign({}, circle2000, circle3000)
+console.log('new copy 2:', newCircle2001)
+
+// 3. using Spread Operator
+
+const newCircle2002 = { ...circle2000, ...circle3000 }
+console.log('new copy 3:', newCircle2002);
