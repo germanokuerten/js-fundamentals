@@ -1300,7 +1300,7 @@ console.log(circle)
 
 /////////////
 
-// 4. Constructor Property
+// 5. Constructor Property
 
 // Note: Every object in JS has a constructor property.
 // And that references the function that was used to create that object.
@@ -1341,7 +1341,7 @@ new Number() // 1, 2, 3, ...
 
 /////////////
 
-// 4. Functions are Objects
+// 6. Functions are Objects
 
 // that's it, in JS functions are objects.
 
@@ -1374,4 +1374,50 @@ console.log(circle7New)
 
 
 
+/////////////
 
+// 7. Value vs Reference Types
+
+// Value types (primitives):
+
+// - Number
+// - String
+// - Boolean
+// - Symbold
+// - undefined
+// - null
+
+
+// Reference Types (objects):
+
+// - Object
+// - Function
+// - Array
+
+////////
+
+// so with primitives both of the variables below are independent from each other, so the value of g is copied into a new variable (h). 
+
+let g = 10
+let h = g
+
+g = 20
+
+console.log(g)
+console.log(h);
+
+
+// now with reference types:
+// when we use an object, the object is not stored in the variable, that object is stored somewhere else in the memory, and the address of that memory location is what is stored in that variable.
+
+let gObject = { value: 10 }
+
+let hObject = gObject 
+
+
+console.log(gObject)
+console.log(hObject);
+
+// Conclusion: 
+// PRIMITIVES are copied by their value. 
+// OBJECTS are copied by their reference (address in memory).
