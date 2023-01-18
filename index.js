@@ -1298,8 +1298,6 @@ console.log(circle)
 
 
 
-
-
 /////////////
 
 // 4. Constructor Property
@@ -1323,7 +1321,9 @@ console.log(newCircle.constructor)
 
 //
 
-let newObject = {}
+let newObject = {
+    a: 'hello'
+}
 
 // JS engine: let newObject = new Object()
 
@@ -1336,4 +1336,42 @@ new String() // '', "", ``, (string literals)
 new Boolean() // true, false (boolean literals)
 
 new Number() // 1, 2, 3, ...
+
+
+
+/////////////
+
+// 4. Functions are Objects
+
+// that's it, in JS functions are objects.
+
+function NewCircle3(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw')
+    }
+}
+
+NewCircle3.call({}, 1, 2, 3, 4)
+NewCircle3.apply({}, [1, 2, 3, 4])
+
+const newCircleExample = new NewCircle3(77)
+
+console.log(newCircleExample.radius)
+
+// the above code its the same as the one below, because it's actually what happens "under the hood".
+
+const Circle7 = new Function('radius', `
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw')
+    }
+`)
+
+const circle7New = new Circle7(7)
+
+console.log(circle7New)
+
+
+
 
