@@ -1421,3 +1421,15 @@ console.log(hObject);
 // Conclusion: 
 // PRIMITIVES are copied by their value. 
 // OBJECTS are copied by their reference (address in memory).
+
+
+////////////
+
+// 8. Enumerating Properties of an Object
+
+const circle1000 = {
+    radius: 1,
+    draw() {
+        console.log('draw')
+    }
+}
