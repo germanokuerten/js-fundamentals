@@ -1516,3 +1516,36 @@ console.log('new copy 3:', newCircle2002);
 
 let circle5000 = {}
 console.log(circle5000)
+
+
+////////////
+
+// 11. Math (math object)
+
+// Math object is built into JS, so if you ever have to deal with math calculations, Math object is very handy.
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+// Some examples:
+
+// Math.random()
+
+console.log(Math.random())
+
+console.log(Math.round(5.4))
+
+console.log(Math.floor(5.9))
+
+console.log(Math.max());
+
+console.log(Math.min()); 
+
+// example on how to use Math.random()
+
+function getRandomNumber(min, max) {
+    return Math.random() * (max - min) + min
+}
+
+
+let getRandomNum = getRandomNumber(100, 105)
+console.log(getRandomNum);
