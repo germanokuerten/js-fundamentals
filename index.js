@@ -1546,6 +1546,12 @@ function getRandomNumber(min, max) {
     return Math.random() * (max - min) + min
 }
 
-
 let getRandomNum = getRandomNumber(100, 105)
 console.log(getRandomNum);
+
+
+////////////
+
+// 12. String Object
+
+const message1 = 'hi'
