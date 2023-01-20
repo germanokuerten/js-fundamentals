@@ -1552,6 +1552,70 @@ console.log(getRandomNum);
 
 ////////////
 
-// 12. String Object
+// 12. String (String Object)
 
-const message1 = 'hi'
+// String primitive
+const message1 = ' hi my name is Germano   '
+
+// String object
+// because this is a construction function we need to apply the 'new' operator
+const another123 = new String('hi')
+
+// Example methods
+console.log(message1.length);
+
+console.log(message1[1])
+
+// ps. it's case sensitive
+console.log(message1.includes('Germano'));
+
+console.log(message1.startsWith('hi'));
+
+console.log(message1.endsWith('Germano'));
+
+// ps. the index includes spaces. 
+console.log(message1.indexOf('name'));
+
+// this returns a new string, and it does not modify the original one.
+console.log(message1.replace('Germano', 'Kuerten'));
+
+// .toUpperCase() or .toLowerCase()
+// Ps. this also returns a new string, and it does not modify original.
+console.log(message1.toUpperCase());
+
+// .trim(): get's rid of all the white space before and after our message.
+// .trimLeft(), .trimRight().
+console.log(message1.trim());
+
+// .split(' ')
+console.log(message1.trim().split(' '));
+
+
+////////////
+
+// Escape Notations
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+// Ex. \n (new line)
+//     \' (a quotation mark)
+
+const message2 = 'hi my name is \n\'Shaq\''
+
+
+
+console.log(message2);
+
+
+// Exercise 
+
+const name1000 = 'hannah'
+
+function isThisAPalidrome(name) {
+    const nameReverse = name.split('').reverse().toString()
+    const nameReg = name.split('').toString()
+ 
+    if (nameReverse === nameReg) return true
+    else return false
+}
+
+console.log(isThisAPalidrome(name1000))
