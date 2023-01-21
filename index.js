@@ -1601,10 +1601,7 @@ console.log(message1.trim().split(' '));
 
 const message2 = 'hi my name is \n\'Shaq\''
 
-
-
 console.log(message2);
-
 
 // Exercise 
 
@@ -1619,3 +1616,43 @@ function isThisAPalidrome(name) {
 }
 
 console.log(isThisAPalidrome(name1000))
+
+///
+
+function isThisAPalidrome2(name) {
+    const nameReverse = name.split('').reverse().toString()
+    return (nameReverse === name) 
+}
+
+console.log(isThisAPalidrome(name1000))
+
+///
+
+// Exercise: Even or Odd
+
+function evenOrOdd(x) {
+    let result = (x % 2)
+    if (result === 0) return 'Even'
+    else return 'Odd'
+}
+
+console.log(evenOrOdd(2));
+
+function evenOrOdd2(x) {
+    if (x % 2 === 0) return "Even"
+    else return "Odd"
+}
+
+console.log(evenOrOdd2(2));
+
+function evenOrOdd3(x) {
+    return x % 2 === 0 ? 'Even' : 'Odd'
+}
+
+console.log(evenOrOdd3(2));
+
+
+////////////
+
+// 13. Template Literals
+
