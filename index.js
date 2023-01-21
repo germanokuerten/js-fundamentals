@@ -1656,3 +1656,36 @@ console.log(evenOrOdd3(2));
 
 // 13. Template Literals
 
+// String primitive
+const message33 = 
+'This is my\n' +
+'\'first\' message'
+
+// types of literals:
+
+// Object {}
+// Boolean true, false
+// String '', ""
+// Template `` (literals)
+
+// With template literals we can format our string the way we want to look at. 
+
+const message3 = 
+`This is my 
+'first' message`
+
+console.log(message3);
+
+// Ex: Useful if you want to send out email messages.
+
+const name2000 = 'John'
+
+const message4 =
+`Hi ${name2000} ${evenOrOdd3(2)},
+
+Thank you for joining my mailing list.
+
+Best,
+Mano`
+
+console.log(message4);
