@@ -1689,3 +1689,12 @@ Best,
 Mano`
 
 console.log(message4);
+
+
+////////////
+
+// 14. Date (object)
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+const date1 = new Date()
