@@ -1697,4 +1697,22 @@ console.log(message4);
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
-const date1 = new Date()
+const nowDate = new Date()
+const date1 = new Date('May 11 2018 09:00')
+
+// note: month is 0 based
+const date2 = new Date(2018, 4, 11, 9)
+
+console.log(nowDate);
+console.log(date1);
+console.log(date2);
+
+// now. is now nowDate.
+console.log(nowDate.setFullYear(2023))
+
+console.log(nowDate.toDateString())
+
+console.log(nowDate.toTimeString())
+
+// commonly used in web applications, if you are building an app that talks to a backend this is the format you commonly use to transfer date between the client and the server.
+console.log(nowDate.toISOString())
