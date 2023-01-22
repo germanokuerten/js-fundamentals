@@ -1716,3 +1716,30 @@ console.log(nowDate.toTimeString())
 
 // commonly used in web applications, if you are building an app that talks to a backend this is the format you commonly use to transfer date between the client and the server.
 console.log(nowDate.toISOString())
+
+
+////////////
+
+// 15. Exercise 1 - Address Object
+
+// Create an address object with 3 properties.
+
+// Street
+// City
+// Zipcode
+
+// Then create a function called showAddress(address), that takes an address object, and displays all properties with the value.
+
+// we use the object literal syntax to initialize this object
+const myAddress = {
+    street: '9660 Durham Dr.',
+    city: 'Huntington Beach',
+    zipCode: '92646'
+}
+
+function showAddress(address) {
+    for (value in address)
+    console.log(`${value}: ${address[value]}`)
+}
+
+showAddress(myAddress)
