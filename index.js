@@ -1742,4 +1742,40 @@ function showAddress(address) {
     console.log(`${value}: ${address[value]}`)
 }
 
-showAddress(myAddress)
+showAddress(myAddress) 
+
+
+////////////
+
+// 16. Exercise 2 - Factory and Constructor Functions
+
+// use factory function and constructor function to initialize an object.
+
+// 1. factory function (Camel Case Notation)
+
+function myAddress2() {
+    const myAddress2 = {
+        street: '9660 Durham Dr. 222',
+        city: 'Huntington Beach 222',
+        zipCode: '92646 222'
+    }
+    return myAddress2
+}
+
+console.log(myAddress2())
+
+
+// 2. constructor function (Pascal Notation)
+
+function MyAddress3() {
+    this.street = '9660 Durham Dr. 333'
+    this.city = 'Huntington Beach 333'
+    this.zipCode = '92646 333'
+
+}
+
+const myAddress3 = new MyAddress3()
+console.log(myAddress3)
+
+
+
