@@ -1747,7 +1747,7 @@ showAddress(myAddress)
 
 ////////////
 
-// 16. Exercise 2 - Factory and Constructor Functions
+// 16. Exercise 2 - Create Factory and Constructor Functions
 
 // use factory function and constructor function to initialize an object.
 
@@ -1764,6 +1764,18 @@ function myAddress2() {
 
 console.log(myAddress2())
 
+// Factory Function (Mosh's example)
+
+function createAddress2(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    }
+} 
+
+console.log(createAddress2('9660 Durham Dr. 2', 'Huntington Beach 2', '92646 2'))
+
 
 // 2. constructor function (Pascal Notation)
 
@@ -1778,4 +1790,13 @@ const myAddress3 = new MyAddress3()
 console.log(myAddress3)
 
 
+// Constructor Function (Mosh's example)
 
+function Address1(street, city, zipCode) {
+    this.street = street
+    this.city = city
+    this.zipCode = zipCode
+}
+
+const Address = new Address1('a', 'b', 'c')
+console.log(Address);
