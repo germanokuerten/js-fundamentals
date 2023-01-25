@@ -1798,5 +1798,56 @@ function Address1(street, city, zipCode) {
     this.zipCode = zipCode
 }
 
-const Address = new Address1('a', 'b', 'c')
-console.log(Address);
+const address1 = new Address1('a', 'b', 'c')
+const address2 = new Address1('a', 'b', 'c')
+
+console.log(address1);
+console.log('ad2:', address2);
+
+// 17. Exercise 3- Object Equality
+
+// create a function that checks to see if both objects have the same properties.
+function areEqual(address1, address2) {
+
+    let array1 = []
+    let array2 = []
+
+    for (key in address1) {
+        array1.push(address1[key])    
+    }
+    for (key in address2) {
+        array2.push(address2[key])
+    }
+    return JSON.stringify(array1) === JSON.stringify(array2)
+}
+
+console.log(areEqual(address1, address2))
+
+// Mosh's solution
+
+function areEqualMosh(address1, address2) {
+    return address1.street === address2.street && address1.city === address2.city && address1.zipCode === address2.zipCode
+}
+
+console.log('Moshs', areEqualMosh(address1, address2))
+
+// this time create a function to see if they both are referencing the same object (in memory).
+function areSame(address1, address2) {
+    return address1 === address2
+}
+
+console.log(areSame(address1, address2));
+
+////////////
+
+// 18.
+
+// Create an object with these properties:
+// title
+// body
+// author
+// views
+// comments
+//      (author, body)
+// isLive (true of false)
+
