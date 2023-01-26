@@ -120,6 +120,7 @@ console.log(person);
 
 let selectedColors = ['red', 'blue']  // array literal (an empty array)
 selectedColors[2] = 55
+
 console.log(selectedColors[0], selectedColors[1]);
 console.log(selectedColors);
 
@@ -1901,3 +1902,25 @@ function BlogPost3(title, body, author, views, comments, isLive) {
 
 const newBlogPost3 = new BlogPost3('a', 'b', 'c')
 console.log(newBlogPost3);
+
+
+////////////
+
+// 20. Exercise 6 - Price Range Object
+
+const prices = [
+    { label: '$', tooltip: 'Inexpensive', minPerson: 0, maxPerson: 10 },
+    { label: '$$', tooltip: 'Moderate', minPerson: 11, maxPerson: 20 },
+    { label: '$$$', tooltip: 'Expensive', minPerson: 21, maxPerson: 50 },
+]
+
+// Pro tip: Whenever you're using an application, look at the features of that application, look at the concepts, and imagine, if you wanted to model one of those concepts using an object, what properties would you put in that object?
+
+
+
+///////////////////////
+// Arrays (deep dive)
+///////////////////////
+
+// 1. Introduction
+
