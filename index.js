@@ -1813,7 +1813,7 @@ function areEqual(address1, address2) {
     let array2 = []
 
     for (key in address1) {
-        array1.push(address1[key])    
+        array1.push(address1[key])
     }
     for (key in address2) {
         array2.push(address2[key])
@@ -1840,9 +1840,10 @@ console.log(areSame(address1, address2));
 
 ////////////
 
-// 18.
+// 18. Exercise 4- Blog Post Object
 
 // Create an object with these properties:
+
 // title
 // body
 // author
@@ -1851,3 +1852,20 @@ console.log(areSame(address1, address2));
 //      (author, body)
 // isLive (true of false)
 
+// use Object literal syntax to create and initialize a "blog post".
+
+let blogPost = {
+    title: 'breathe',
+    body: '?',
+    author: 'Germano Kuerten',
+    views: 345,
+    comments: [
+        { author: 'author', body: 'body' },
+        { author: 'author2', body: 'body2' },
+    ],
+    isLive: true,
+}
+
+console.log(blogPost);
+
+//
