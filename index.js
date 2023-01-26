@@ -1868,4 +1868,36 @@ let blogPost = {
 
 console.log(blogPost);
 
-//
+
+////////////
+
+// 19. Exercise 5 - Constructor Functions
+
+
+let blogPost2 = {
+    title: 'breathe',
+    body: '?',
+    author: 'Germano Kuerten',
+    views: 345,
+    comments: [
+        { author: 'author', body: 'body' },
+        { author: 'author2', body: 'body2' },
+    ],
+    isLive: true,
+}
+
+// Constructor function
+
+function BlogPost3(title, body, author, views, comments, isLive) {
+    this.title = title
+    this.body = body
+    this.author = author
+    this.views = 0
+    this.comments = []
+    this.isLive = false
+}
+
+// Ps. we should always aim to have a function with fewer parameters, the more parameters you have the harder it is to use it. // and in this case views, comments and isLive has default value.
+
+const newBlogPost3 = new BlogPost3('a', 'b', 'c')
+console.log(newBlogPost3);
