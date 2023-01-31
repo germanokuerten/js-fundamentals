@@ -1887,7 +1887,7 @@ let blogPost2 = {
     isLive: true,
 }
 
-// Constructor function
+// Constructor function (a function that builds objects)
 
 function BlogPost3(title, body, author, views, comments, isLive) {
     this.title = title
@@ -1924,3 +1924,4 @@ const prices = [
 
 // 1. Introduction
 
+//
