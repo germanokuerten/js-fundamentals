@@ -1918,10 +1918,17 @@ const prices = [
 
 
 
+///////////////////
+
+
 ///////////////////////
 // Arrays (deep dive)
 ///////////////////////
 
 // 1. Introduction
 
-//
+// - Adding new elements
+// - Finding elements
+// - Removing elements
+// - Splitting arrays
+// - Combining arrays
