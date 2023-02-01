@@ -1959,3 +1959,8 @@ console.log(numbersArray);
 // Middle: .splice(starting position, how many to delete, what you want to add?)
 numbersArray.splice(2, 0, 'a', 'b', 'c', 99, 100)
 console.log(numbersArray);
+
+
+///////////////////
+
+// 3. Finding Elements (Primitives)
