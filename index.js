@@ -1932,3 +1932,30 @@ const prices = [
 // - Removing elements
 // - Splitting arrays
 // - Combining arrays
+
+// ps. these operations are extremelly important, specially when you starting out.
+
+
+///////////////////
+
+// 2. Adding Elements
+
+const numbersArray = [3, 4]
+
+// since we use const keyword, you cannot reassign numbersArray to something else, but you can modify the content in the array.
+
+// ps. Arrays are objects. So using the dot notation we can look up all the properties and methods defined in Arrays.
+
+// add elements at the end, beginning and middle of an array:
+
+// End: .push():
+numbersArray.push(5, 6)
+console.log(numbersArray)
+
+// Beginning: .unshift()
+numbersArray.unshift(1, 2)
+console.log(numbersArray);
+
+// Middle: .splice(starting position, how many to delete, what you want to add?)
+numbersArray.splice(2, 0, 'a', 'b', 'c', 99, 100)
+console.log(numbersArray);
