@@ -1965,4 +1965,4 @@ console.log(numbersArray);
 
 // 3. Finding Elements (Primitives)
 
-///
+const numbers999 = [1, 2, 3, 4]
