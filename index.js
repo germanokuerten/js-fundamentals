@@ -1965,4 +1965,11 @@ console.log(numbersArray);
 
 // 3. Finding Elements (Primitives)
 
-const numbers999 = [1, 2, 3, 4]
+// Finding elements depends on if you're storing primitive or reference types in an array.
+
+const numbers999 = [1, 2, 3, 1, 4]
+
+
+
+
+
