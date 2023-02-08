@@ -1967,9 +1967,34 @@ console.log(numbersArray);
 
 // Finding elements depends on if you're storing primitive or reference types in an array.
 
-const numbers999 = [1, 2, 3, 1, 4]
+const numbers999 = [1, 2, 3, 1, 4, 1]
 
 
+// indexOf(): pass the element / data we are looking for, if the element exists in the array, this method will return the index of that element. and if doesn't exist, it will return -1.
+
+// Ex:
+// It will return -1 bc 'a' does not exist
+console.log(numbers999.indexOf('a'))
+
+// this will return 0, because the element of 1 is index 0.
+// ps. The type matters, so '1' would return -1.
+// ps. Also, it will only return the index of the first element that matches (so if there are other 1's for example it will not return those indexes). 
+// In other words, it returns the index of the first occurrence of a vale in an array.
+console.log(numbers999.indexOf(1))
+
+// lastIndexOf(): It will return the last index that the elemenet is found
+console.log(numbers999.lastIndexOf(1))
+
+// PS. To see if a given element exists in an array we can do this:
+console.log(numbers999.indexOf(1) !== -1)
+// Newer way of doing it, using JS method.
+console.log(numbers999.includes(1))
 
 
+// Ps. all these methods have a second parameter (optional). And that is  the starting index of the search.
+// Ex: 
+// Here it will return 3, because it will begin at index 3, and 1 in this case is at index 3.
+console.log(numbers999.indexOf(1, 3))
 
+// Or in this case it will also return 3, because the indexOf() will begin at index 1 (which is 2), and next index for element 1 is 3.
+console.log(numbers999.indexOf(1, 1))
