@@ -2004,3 +2004,22 @@ console.log(numbers999.indexOf(1, 1))
 ///////////////////
 
 // 4. Finding Elements (Reference Types)
+
+// Note: Remember reference types point to a reference in memory.
+
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' }
+]
+
+// Note: Here we will get false because the object we pass down is a different object, because it has a different reference.
+console.log(courses.includes({ id: 1, name: 'a' }))
+
+// So in order to find an element or value we need to use the find() method.
+
+// So within find() we have to pass a function (we call it a predicate or a CALL BACK FUNCTION (because this function is called back as part of finding an element in this array ???), and use that to determine if the given element exists in an array or not)
+
+// So this function inside takes a parameter. (that's an element from the array)
+// And in the body of that function we should return a boolean. 
+console.log(courses.find(e => e.id === 1))
+
