@@ -2001,6 +2001,7 @@ console.log(numbers999.indexOf(1, 3))
 console.log(numbers999.indexOf(1, 1))
 
 
+
 ///////////////////
 
 // 4. Finding Elements (Reference Types)
@@ -2021,5 +2022,29 @@ console.log(courses.includes({ id: 1, name: 'a' }))
 
 // So this function inside takes a parameter. (that's an element from the array)
 // And in the body of that function we should return a boolean. 
-console.log(courses.find(e => e.id === 1))
+// Ps. if there's not "match" it will return undefined
+const course1 = courses.find(e => e.id === 1)
+console.log(course1);
+
+// Mosh's example:
+const course = courses.find(function(element) {
+    return element.id === 2
+}) 
+
+console.log(course)
+
+// Basically find methods it returns the first element / value that matches the criteria we define.
+
+
+///
+
+// findIndex(): It works similarly, but instead of returning the object it returns the index in the array.
+const courseIndex = courses.findIndex(e => e.name === 'b')
+console.log(courseIndex);
+
+
+
+///////////////////
+
+// 5. Arrow Functions
 
