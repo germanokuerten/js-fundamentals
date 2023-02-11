@@ -2050,3 +2050,42 @@ console.log(courseIndex);
 
 const courseArrow = courses.find(e => e.id === 2)
 console.log('arrow function:', courseArrow);
+
+
+// Exercise
+
+list1 = [1, 2, 3, 4]
+function reverseList(list) {
+    return list.reverse()
+}
+
+console.log(reverseList(list1))
+console.log(list1.length)
+
+
+//
+
+const sheep = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true]
+
+
+// declare newArray
+// scan through array
+// if true, push to newArray
+// return newArray.length
+
+function sheepCount(array) {
+
+    let newArray = []
+
+    for (element of array)
+    if (element) newArray.push(element)
+    
+    return newArray.length
+}
+
+console.log(sheepCount(sheep));
