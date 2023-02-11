@@ -2048,3 +2048,5 @@ console.log(courseIndex);
 
 // 5. Arrow Functions
 
+const courseArrow = courses.find(e => e.id === 2)
+console.log('arrow function:', courseArrow);
