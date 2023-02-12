@@ -2052,7 +2052,7 @@ const courseArrow = courses.find(e => e.id === 2)
 console.log('arrow function:', courseArrow);
 
 
-// Exercise
+// Exercises (CODE WARS)
 
 list1 = [1, 2, 3, 4]
 function reverseList(list) {
@@ -2072,7 +2072,6 @@ const sheep = [true,  true,  true,  false,
     true,  true,  true,  true ,
     false, false, true,  true]
 
-
 // declare newArray
 // scan through array
 // if true, push to newArray
@@ -2089,3 +2088,17 @@ function sheepCount(array) {
 }
 
 console.log(sheepCount(sheep));
+
+//
+
+
+
+function seatCount(cap, on, wait) {
+    let free = (cap - on)
+    let final = (free - wait)
+    if (final >= 0) 
+        return `He can fit all ${wait} passengers`
+    else return `He can't fit ${Math.abs(final)} of the ${wait} waiting`
+}
+
+console.log(seatCount(100, 60, 50))
