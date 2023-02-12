@@ -2049,10 +2049,18 @@ console.log(courseIndex);
 // 5. Arrow Functions
 
 const courseArrow = courses.find(e => e.id === 2)
+
 console.log('arrow function:', courseArrow);
+
+// a declared arrow function example (without body and implicit return)
+const functionExample = () => 'arrow function example w/ implicit return'
+
+console.log(functionExample())
 
 
 // Exercises (CODE WARS)
+
+// 1.
 
 list1 = [1, 2, 3, 4]
 function reverseList(list) {
@@ -2063,7 +2071,7 @@ console.log(reverseList(list1))
 console.log(list1.length)
 
 
-//
+// 2.
 
 const sheep = [true,  true,  true,  false,
     true,  true,  true,  true ,
@@ -2089,9 +2097,7 @@ function sheepCount(array) {
 
 console.log(sheepCount(sheep));
 
-//
-
-
+// 3.
 
 function seatCount(cap, on, wait) {
     let free = (cap - on)
@@ -2102,3 +2108,9 @@ function seatCount(cap, on, wait) {
 }
 
 console.log(seatCount(100, 60, 50))
+
+
+
+///////////////////
+
+// 6. Removing Elements
