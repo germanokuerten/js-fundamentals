@@ -2121,13 +2121,13 @@ const numberss = [1, 2, 3, 4]
 
 // End
 // .push() (to add)
-// .pop() (to remove)
+// .pop() (to remove last element)
 const last = numberss.pop()
 console.log(last);
 
 // Beginning
 // .unshift() (to add)
-// .shift() (to remove)
+// .shift() (to remove first element)
 const first = numberss.shift()
 console.log(first);
 
@@ -2138,5 +2138,13 @@ const numberss2 = [1, 2, 3, 4]
 
 // Middle
 // splice(index to start, how many elements to be deleted, and if want to add element then element or elements to be added)
-numberss2.splice(4)
+numberss2.splice(2, 1, 'a')
 console.log(numberss2)
+
+
+///////////////////
+
+// 6. Emptying an Array
+
+const numbersArray1 = [1, 2, 3, 4]
+
