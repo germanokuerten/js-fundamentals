@@ -2114,3 +2114,29 @@ console.log(seatCount(100, 60, 50))
 ///////////////////
 
 // 6. Removing Elements
+
+
+const numberss = [1, 2, 3, 4]
+
+
+// End
+// .push() (to add)
+// .pop() (to remove)
+const last = numberss.pop()
+console.log(last);
+
+// Beginning
+// .unshift() (to add)
+// .shift() (to remove)
+const first = numberss.shift()
+console.log(first);
+
+console.log('whats left:', numberss);
+
+
+const numberss2 = [1, 2, 3, 4]
+
+// Middle
+// splice(index to start, how many elements to be deleted, and if want to add element then element or elements to be added)
+numberss2.splice(4)
+console.log(numberss2)
