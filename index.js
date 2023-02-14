@@ -2144,7 +2144,19 @@ console.log(numberss2)
 
 ///////////////////
 
-// 6. Emptying an Array
+// 7. Emptying an Array
 
 const numbersArray1 = [1, 2, 3, 4]
 
+// Solution 1 (only works with let)
+numbersArray1 = []
+
+// Solution 2 (Mosh's favourite)
+numbersArray1.length = 0
+
+// Solution 3 (a little noisy, but works)
+numbersArray1.splice(0, numbersArray1.length)
+
+// Solution 4
+while (numbers999.length > 0)
+    numbersArray1.pop()
