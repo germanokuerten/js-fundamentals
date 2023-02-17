@@ -2160,3 +2160,9 @@ numbersArray1.splice(0, numbersArray1.length)
 // Solution 4
 while (numbers999.length > 0)
     numbersArray1.pop()
+
+
+
+///////////////////
+
+// 7. Emptying an Array
