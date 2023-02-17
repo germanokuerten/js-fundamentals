@@ -2146,23 +2146,33 @@ console.log(numberss2)
 
 // 7. Emptying an Array
 
-const numbersArray1 = [1, 2, 3, 4]
+let numbersArray1 = [1, 2, 3, 4]
 
-// Solution 1 (only works with let)
+// if you create another reference like below, then the array above even if modified, now that has another reference it will not be garbage collected.
+let anotherArray1 = numbersArray1
+
+// Solution 1 (only works with let) (but the old array is still in memory) (and when we re-assign the new numbersArray1 variable below, now numbersArray1 is pointing to a new object in memory) (and anotherArray1 created previously will still be pointing to the old object)
+
+// so to conclude this solution works to empty an array if you have no other references (like numbersArray1 in this case) to the original array (numbersArray1).
+
+// If you have multiple references to the original array, then use one of the other solutions.
 numbersArray1 = []
+console.log(numbersArray1);
+console.log('old object:', anotherArray1);
 
-// Solution 2 (Mosh's favourite)
+// Solution 2 (Mosh's favourite) 
+// this will truncate the array (it will remove all elements).
 numbersArray1.length = 0
+
 
 // Solution 3 (a little noisy, but works)
 numbersArray1.splice(0, numbersArray1.length)
 
-// Solution 4
+// Solution 4 (least recommended, noisy and slow when dealing with very large arrays)
 while (numbers999.length > 0)
     numbersArray1.pop()
 
 
-
 ///////////////////
 
-// 7. Emptying an Array
+// 8. Combining and Slicing Arrays
