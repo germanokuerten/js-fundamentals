@@ -2176,3 +2176,5 @@ while (numbers999.length > 0)
 ///////////////////
 
 // 8. Combining and Slicing Arrays
+
+// Ps. with these lessons, instead of having one large doc, create a folder for each module, and a file for each lesson! Also a folder for JS fundamentals, and a folder for JS advanced concepts.
