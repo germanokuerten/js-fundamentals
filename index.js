@@ -2180,7 +2180,7 @@ numbersArray1.splice(0, numbersArray1.length)
 // Ps. with these lessons, instead of having one large doc, create a folder for each module, and a file for each lesson! Also a folder for JS fundamentals, and a folder for JS advanced concepts.
 // or at least a file for each module, and a folder for each course (ex JS fundamentals).
 
-// .concat()
+// .concat() - For combining arrays
 
 const first1 = [1, 2, 3]
 const second1 = [4, 5, 6]
@@ -2189,5 +2189,12 @@ combined1 = first1.concat(second1)
 
 console.log(combined1);
 
-// .slice()
+// .slice(index here and after, index that it will stop taking) - For slicing arrays
 
+// combined1 = [ 1, 2, 3, 4, 5, 6 ]
+
+const slice = combined1.slice(2, 5)
+console.log(slice);
+
+
+// when using both methods, they create a new array. So if the elements are primitive types, they are copied by value, if they are reference types then the reference it self is copied over.
