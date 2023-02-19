@@ -2180,4 +2180,5 @@ while (numbers999.length > 0)
 // Ps. with these lessons, instead of having one large doc, create a folder for each module, and a file for each lesson! Also a folder for JS fundamentals, and a folder for JS advanced concepts.
 // or at least a file for each module, and a folder for each course (ex JS fundamentals).
 
-//
+const first1 = [1, 2, 3]
+const second1 = [1, 2, 3]
