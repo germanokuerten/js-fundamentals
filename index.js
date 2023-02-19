@@ -2197,4 +2197,26 @@ const slice = combined1.slice(2, 5)
 console.log(slice);
 
 
-// when using both methods, they create a new array. So if the elements are primitive types, they are copied by value, if they are reference types then the reference it self is copied over.
+// when using both methods, they create a new array. So if the elements are primitive types, they are copied by value, if they are reference types then the reference is copied over.
+// So that means that if you change the data in an object or other reference type data, it mutates the original object to where the reference is pointing to.
+
+
+///////////////////
+
+// 9. The Spread Operator
+
+// combined1 = first1.concat(second1)  - so instead of doing this, you can use the spread operator 
+// (/spread operator is simpler)
+const combinedSpread = [...first1, 'a', ...second1, 'b']
+
+console.log('spread operator:', combinedSpread)
+
+
+///
+
+// const copy123 = combined.slice()   - then instead of using .slice() method to create a copy, we can use the spread operator.
+
+const copy123 = [...combinedSpread]
+
+console.log('copy: ', copy123)
+
