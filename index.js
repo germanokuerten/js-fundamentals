@@ -2169,8 +2169,8 @@ numbersArray1.length = 0
 numbersArray1.splice(0, numbersArray1.length)
 
 // Solution 4 (least recommended, noisy and slow when dealing with very large arrays)
-while (numbers999.length > 0)
-    numbersArray1.pop()
+/* while (numbers999.length > 0)
+    numbersArray1.pop() */
 
 
 ///////////////////
@@ -2180,5 +2180,14 @@ while (numbers999.length > 0)
 // Ps. with these lessons, instead of having one large doc, create a folder for each module, and a file for each lesson! Also a folder for JS fundamentals, and a folder for JS advanced concepts.
 // or at least a file for each module, and a folder for each course (ex JS fundamentals).
 
+// .concat()
+
 const first1 = [1, 2, 3]
-const second1 = [1, 2, 3]
+const second1 = [4, 5, 6]
+
+combined1 = first1.concat(second1)
+
+console.log(combined1);
+
+// .slice()
+
