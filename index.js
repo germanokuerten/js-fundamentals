@@ -2228,7 +2228,7 @@ console.log('copy: ', copy123)
 const newArray1 = [1, 2, 3]
 console.log('new array:',newArray1);
 
-// To get elements
+// to get elements
 for (number of newArray1)
     console.log(number)
 
@@ -2241,9 +2241,31 @@ newArray1.forEach(function(number){
     console.log(number)
 }) 
 
-// using .forEach() with arrow function (one liner)
+// using .forEach(element, index) with arrow function (one liner)
 newArray1.forEach(number => console.log('arrow f:', number))
 
-// using .forEach() with 2 parameters
-newArray1.forEach((number, index) => console.log('2 params:', index, number))
+// using .forEach(element, index) with arrow function and with 2 parameters
+newArray1.forEach((number, index) => console.log('2 params:', index, number)) 
 
+
+///////////////////
+
+const newArray2 = [1, 2, 3]
+
+// 11. Joining Arrays
+
+// .join() - it joins the array and returns a string
+
+const joined = newArray2.join(', ')
+console.log(joined)
+
+
+// .split()  - a string method that works well with join(), it returns an array
+const message123 = 'This is my first message'
+
+const split = message123.split(' ')
+console.log(split);
+
+// technique used to create url slugs
+const combined123 = split.join('-')
+console.log(combined123);
