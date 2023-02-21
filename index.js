@@ -2250,9 +2250,10 @@ newArray1.forEach((number, index) => console.log('2 params:', index, number))
 
 ///////////////////
 
-const newArray2 = [1, 2, 3]
-
 // 11. Joining Arrays
+
+
+const newArray2 = [1, 2, 3]
 
 // .join() - it joins the array and returns a string
 
@@ -2269,3 +2270,11 @@ console.log(split);
 // technique used to create url slugs
 const combined123 = split.join('-')
 console.log(combined123);
+
+
+///////////////////
+
+// 12. Sorting Arrays
+
+const numbers123 = [2, 3, 1]
+console.log(numbers123);
