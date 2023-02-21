@@ -2255,13 +2255,12 @@ newArray1.forEach((number, index) => console.log('2 params:', index, number))
 
 const newArray2 = [1, 2, 3]
 
-// .join() - it joins the array and returns a string
-
+// .join() - it joins the array and returns a string (array -> string)
 const joined = newArray2.join(', ')
 console.log(joined)
 
 
-// .split()  - a string method that works well with join(), it returns an array
+// .split()  - a string method that works well with join(), it returns an array (string -> array)
 const message123 = 'This is my first message'
 
 const split = message123.split(' ')
@@ -2276,5 +2275,26 @@ console.log(combined123);
 
 // 12. Sorting Arrays
 
-const numbers123 = [2, 3, 1]
+const numbers123 = [2, 3, 1, 'b', 4, 'a']
 console.log(numbers123);
+
+numbers123.sort()
+console.log(numbers123);
+
+
+// practice
+
+const nameList = ['Germano Kuerten', 'andre Kuerten']
+
+// nameList.sort()
+// console.log(nameList);
+
+const newNameList = nameList.join(',')
+const toUpper = newNameList.toLocaleUpperCase();
+
+const split1 = toUpper.split(',')
+const sorted = split1.sort()
+console.log(sorted);
+
+
+
