@@ -2220,3 +2220,30 @@ const copy123 = [...combinedSpread]
 
 console.log('copy: ', copy123)
 
+
+///////////////////
+
+// 10. Iterating an Array
+
+const newArray1 = [1, 2, 3]
+console.log('new array:',newArray1);
+
+// To get elements
+for (number of newArray1)
+    console.log(number)
+
+// to get index
+for (number in newArray1)
+    console.log(number)
+
+// using .forEach()
+newArray1.forEach(function(number){
+    console.log(number)
+}) 
+
+// using .forEach() with arrow function (one liner)
+newArray1.forEach(number => console.log('arrow f:', number))
+
+// using .forEach() with 2 parameters
+newArray1.forEach((number, index) => console.log('2 params:', index, number))
+
