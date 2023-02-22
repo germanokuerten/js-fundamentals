@@ -2324,11 +2324,9 @@ const sorted123 = courses123.sort(function(a, b) {
     const nameA = a.name.toLowerCase().split(' ')
     const nameB = b.name.toLowerCase().split(' ')
 
+    // alternatively you can use .reverse() to reverse the array:
     // const reversedA = nameA.reverse()
     // const reversedB = nameB.reverse()
-
-    // console.log(reversedA);
-    // console.log(reversedB);
     
     let lastNameA = nameA[nameA.length -1]
     let lastNameB = nameB[nameB.length -1]
@@ -2345,4 +2343,10 @@ Object.entries(sorted123).forEach(([key, x]) =>
     console.log(x.name.slice(x.name.lastIndexOf(' ')), x.name.split(' ')[0]))
 
 
-// ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices.
+// Ps. ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices.
+
+
+///////////////////
+
+// 13. Testing the Elements of an Array
+
