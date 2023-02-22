@@ -2297,4 +2297,47 @@ const sorted = split1.sort()
 console.log(sorted);
 
 
+///
 
+const courses123 = [
+    { id: 1, name: 'Node.js America'},
+    { id: 2, name: 'javaScript Brazil'},
+    { id: 3, name: 'Python Zython'},
+    { id: 4, name: 'Amanda Kubberness'}
+]
+
+// courses123.sort(function(a, b) {
+//     if (a.name.toLowerCase() < b.name.toLowerCase()) return -1
+//     if (a.name.toLowerCase() > b.name.toLowerCase()) return 1
+//     return 0
+// })
+
+// console.log(courses123);
+
+
+// Mosh's solution
+
+courses123.sort(function(a, b) {
+
+    const nameA = a.name.toLowerCase().split(' ')
+    const nameB = b.name.toLowerCase().split(' ')
+
+    // const reversedA = nameA.reverse()
+    // const reversedB = nameB.reverse()
+
+    // console.log(reversedA);
+    // console.log(reversedB);
+    
+    let lastNameA = nameA[nameA.length -1]
+    let lastNameB = nameB[nameB.length -1]
+    
+    if (lastNameA < lastNameB) return -1
+    if (lastNameA  > lastNameB) return 1
+    return 0
+
+})
+
+console.log('list of names', courses123);
+
+
+// ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices.
