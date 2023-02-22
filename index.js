@@ -2306,6 +2306,8 @@ const courses123 = [
     { id: 4, name: 'Amanda Kubberness'}
 ]
 
+// Simple sort:
+
 // courses123.sort(function(a, b) {
 //     if (a.name.toLowerCase() < b.name.toLowerCase()) return -1
 //     if (a.name.toLowerCase() > b.name.toLowerCase()) return 1
@@ -2315,7 +2317,7 @@ const courses123 = [
 // console.log(courses123);
 
 
-// Mosh's solution
+// Sorting by last name:
 
 const sorted123 = courses123.sort(function(a, b) {
 
@@ -2337,6 +2339,7 @@ const sorted123 = courses123.sort(function(a, b) {
     
 })
 
+// Returning last name, and then first name.
 
 Object.entries(sorted123).forEach(([key, x]) =>
     console.log(x.name.slice(x.name.lastIndexOf(' ')), x.name.split(' ')[0]))
