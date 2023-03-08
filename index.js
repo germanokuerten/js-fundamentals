@@ -2353,4 +2353,17 @@ Object.entries(sorted123).forEach(([key, x]) =>
 // .every() - if every element matches the given criteria
 // .some() - if at least 1 element matches the given criteria
 
-const numbersTesting = [1, 2, 3]
+const numbersTesting = [1, 2, 3, -1]
+
+const allNumbers = numbersTesting.every(function(value) {
+    return value >= 0
+})
+
+console.log('.every()', allNumbers);
+
+const someNumbers = numbersTesting.some(function(value) {
+    return value >= 0
+})
+
+console.log('.some():', someNumbers);
+
