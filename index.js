@@ -2303,7 +2303,7 @@ const courses123 = [
     { id: 1, name: 'Node.js America'},
     { id: 2, name: 'javaScript Brazil'},
     { id: 3, name: 'A Zython'},
-    { id: 4, name: 'Amanda Kubberness'}
+    { id: 4, name: 'Amanda Kubberness Amazonas'}
 ]
 
 // Simple sort:
@@ -2319,7 +2319,7 @@ const courses123 = [
 
 // Sorting by last name:
 
-const sorted123 = courses123.sort(function(a, b) {
+    const sorted123 = courses123.sort(function(a, b) {
 
     const nameA = a.name.toLowerCase().split(' ')
     const nameB = b.name.toLowerCase().split(' ')
@@ -2350,4 +2350,7 @@ Object.entries(sorted123).forEach(([key, x]) =>
 
 // 13. Testing the Elements of an Array
 
-//
+// .every() - if every element matches the given criteria
+// .some() - if at least 1 element matches the given criteria
+
+const numbersTesting = [1, 2, 3]
