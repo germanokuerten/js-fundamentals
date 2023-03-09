@@ -2386,3 +2386,9 @@ console.log(numbersFiltered);
 const numFiltered = numbersFilter.filter(n => n >= 0)
 
 console.log(numFiltered);
+
+
+///////////////////
+
+// 15. Mapping an Array
+
