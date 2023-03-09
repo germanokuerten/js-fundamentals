@@ -2367,3 +2367,15 @@ const someNumbers = numbersTesting.some(function(value) {
 
 console.log('.some():', someNumbers);
 
+
+///////////////////
+
+// 14. Filtering an Array
+
+const numbersFilter = [1, -1, 2, 3]
+
+const numbersFiltered = numbersFilter.filter(function(value) {
+    return value >= 0
+})
+
+console.log(numbersFiltered);
