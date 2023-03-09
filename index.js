@@ -2379,3 +2379,10 @@ const numbersFiltered = numbersFilter.filter(function(value) {
 })
 
 console.log(numbersFiltered);
+
+
+// Cleaner implementation example
+
+const numFiltered = numbersFilter.filter(n => n >= 0)
+
+console.log(numFiltered);
