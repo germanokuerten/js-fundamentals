@@ -2399,13 +2399,36 @@ const list = numFiltered.map(n => '<li>' + n + '</li>')
 console.log(list);
 
 
-// another example of how to use .map()
+// .map() - mapping numbers into strings
 
 const html = '<ul>' + list.join('') + '</ul>'
 
 console.log(html)
 
 
-// .map() to an object.
+// .map() - mapping to objects.
 
+const listObject = numFiltered.map(n => {
+    return { value: n }
+})
+
+
+// one liner: (has to wrap square braquets inside of parentheses, otherwise JS thinks it's another code block).
+
+const listObject2 = numFiltered.map(n => ({ value: n }))
+
+console.log(listObject2);
+
+
+// Chaining - These methods are chainable, meaning you can call one method after another in a chain
+
+const newNumbers = [1, -1, 2, 3]
+
+const newNumbersFilterMap = newNumbers
+    .filter(n => n >= 0)
+    .map(n => ({value: n}))
+    .filter(n => n.value > 1)
+    .map(n => n.value + 1)
+
+console.log(newNumbersFilterMap);
 
