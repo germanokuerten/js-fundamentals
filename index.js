@@ -2392,3 +2392,15 @@ console.log(numFiltered);
 
 // 15. Mapping an Array
 
+// .map() method - it 'maps' each element in an array into something else.
+
+const list = numFiltered.map(n => '<li>' + n + '</li>')
+
+console.log(list);
+
+
+// another example of how to use .map()
+
+const html = '<ul>' + list.join('') + '</ul>'
+
+console.log(html)
