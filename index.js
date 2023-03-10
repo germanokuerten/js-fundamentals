@@ -2370,7 +2370,7 @@ console.log('.some():', someNumbers);
 
 ///////////////////
 
-// 14. Filtering an Array
+// 14. Filtering an Array (returns a new array, does not modify the original array)
 
 const numbersFilter = [1, -1, 2, 3]
 
@@ -2390,7 +2390,7 @@ console.log(numFiltered);
 
 ///////////////////
 
-// 15. Mapping an Array
+// 15. Mapping an Array (returns a new array, does not modify the original array)
 
 // .map() method - it 'maps' each element in an array into something else.
 
@@ -2404,3 +2404,8 @@ console.log(list);
 const html = '<ul>' + list.join('') + '</ul>'
 
 console.log(html)
+
+
+// .map() to an object.
+
+
