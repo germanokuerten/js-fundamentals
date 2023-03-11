@@ -2437,14 +2437,40 @@ console.log(newNumbersFilterMap);
 
 // 16. Reducing an Array
 
-const newNumbers2 = [1, -1, 2, 3]
+const newNumbers2 = [11, -1, 2, 3]
 
-// let sum3 = 0
-// for (let n of newNumbers2)
-//     sum3 += n
+// Example:
 
-// console.log('sum of newNumbers2:', sum3)
+let sum3 = 0
+for (let n of newNumbers2)
+    sum3 += n
 
-newNumbers2.reduce((accumulator, currentValue) => {
-    
-})
+console.log('sum of newNumbers2:', sum3)
+
+
+// Using .reduce()
+
+// Whats happening under the hood:
+// a = 0, c = 1 => a = 1
+// a = 1, c = -1 => a = 0
+// a = 0, c = 2 => a = 2
+// a = 2, c = 3 => a = 5
+
+// const sum4 = newNumbers2.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue
+// }, 0) //, option for second argument here, that you can set to 0 or whatever initial number you'd like.
+
+
+// minimizing
+
+const sum4 = newNumbers2.reduce(
+    (accumulator, currentValue) => accumulator + currentValue) 
+
+console.log(sum4);
+
+
+
+///////////////////
+
+// 17. Exercise 1 - Array from Range
+
