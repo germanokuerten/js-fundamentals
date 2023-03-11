@@ -2432,3 +2432,19 @@ const newNumbersFilterMap = newNumbers
 
 console.log(newNumbersFilterMap);
 
+
+///////////////////
+
+// 16. Reducing an Array
+
+const newNumbers2 = [1, -1, 2, 3]
+
+// let sum3 = 0
+// for (let n of newNumbers2)
+//     sum3 += n
+
+// console.log('sum of newNumbers2:', sum3)
+
+newNumbers2.reduce((accumulator, currentValue) => {
+    
+})
