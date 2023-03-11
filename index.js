@@ -2474,3 +2474,17 @@ console.log(sum4);
 
 // 17. Exercise 1 - Array from Range
 
+const numExercise = arrayFromRange(-1, 4)
+
+// takes 2 parameters min, max.
+function arrayFromRange(min, max) {
+    let array = [] 
+    for(let i=min; i <= max; i++) {
+        array.push(i)
+    }
+    return array
+}
+
+console.log(numExercise);
+
+
