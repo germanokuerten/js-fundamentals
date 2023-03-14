@@ -2456,17 +2456,17 @@ console.log('sum of newNumbers2:', sum3)
 // a = 0, c = 2 => a = 2
 // a = 2, c = 3 => a = 5
 
-// const sum4 = newNumbers2.reduce((accumulator, currentValue) => {
-//     return accumulator + currentValue
-// }, 0) //, option for second argument here, that you can set to 0 or whatever initial number you'd like.
+const sum4 = newNumbers2.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+}, 0) //, option for second argument here, that you can set to 0 or whatever initial number you'd like.
 
 
 // minimizing
 
-const sum4 = newNumbers2.reduce(
+const sum5 = newNumbers2.reduce(
     (accumulator, currentValue) => accumulator + currentValue) 
 
-console.log(sum4);
+console.log(sum5);
 
 
 
@@ -2474,17 +2474,18 @@ console.log(sum4);
 
 // 17. Exercise 1 - Array from Range
 
-const numExercise = arrayFromRange(-1, 4)
+const numExercise = arrayFromRange(-1, 4);
 
 // takes 2 parameters min, max.
 function arrayFromRange(min, max) {
-    let array = [] 
-    for(let i=min; i <= max; i++) {
-        array.push(i)
-    }
-    return array
+    let array = [];
+    for(let i=min; i <= max; i++)
+        array.push(i);
+    return array;
 }
 
 console.log(numExercise);
+
+//
 
 
