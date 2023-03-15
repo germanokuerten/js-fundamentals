@@ -2486,6 +2486,6 @@ function arrayFromRange(min, max) {
 
 console.log(numExercise);
 
-//
+/// 
 
 
