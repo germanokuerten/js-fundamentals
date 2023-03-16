@@ -2512,3 +2512,38 @@ function includes2(array, searchElement) {
 }
 
 console.log(includes2(numbersInc, 10));
+
+
+
+///////////////////
+
+// 19 - Exercise 3 - Except
+
+const numbersExcept = [1, 2, 3, 4, 1, 1]
+
+
+
+function except(array, excluded) {
+    output = []
+    for (let element in array)
+        if (!excluded.includes(array[element]))
+            output.push(array[element])
+    return output
+}
+
+console.log(except(numbersExcept, [1, 2]))
+
+
+// Mosh's solution - (same thing but with 'for of' loop)
+
+function except2(array, excluded) {
+    let output = []
+    for (element of array)
+        if (!excluded.includes(element))
+            output.push(element)
+    return output
+}
+
+console.log(except2(numbersExcept, [1, 3]));
+
+
