@@ -2486,6 +2486,20 @@ function arrayFromRange(min, max) {
 
 console.log(numExercise);
 
-/// 
 
 
+///////////////////
+
+// 18 - Exercise 2 - Includes
+
+const numbersInc = [1, 2, 3, 4, 9]
+
+function includes(array, searchElement) {
+
+    for (i = 0; i < array.length; i++) {
+        if (array[i] === searchElement) return console.log(true)
+    }
+    return console.log(false)
+}
+
+includes(numbersInc, 5)
