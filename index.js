@@ -2495,11 +2495,20 @@ console.log(numExercise);
 const numbersInc = [1, 2, 3, 4, 9]
 
 function includes(array, searchElement) {
-
-    for (i = 0; i < array.length; i++) {
-        if (array[i] === searchElement) return console.log(true)
-    }
-    return console.log(false)
+    for (i = 0; i < array.length; i++)
+        if (array[i] === searchElement) return true
+    return false
 }
 
-includes(numbersInc, 5)
+console.log(includes(numbersInc, 5))
+
+
+// Mosh's implementation
+
+function includes2(array, searchElement) {
+    for (let element of array)
+        if (element === searchElement) return true
+    return false
+}
+
+console.log(includes2(numbersInc, 10));
