@@ -2490,7 +2490,7 @@ console.log(numExercise);
 
 ///////////////////
 
-// 18 - Exercise 2 - Includes
+// 18. Exercise 2 - Includes
 
 const numbersInc = [1, 2, 3, 4, 9]
 
@@ -2517,12 +2517,12 @@ console.log(includes2(numbersInc, 10));
 
 ///////////////////
 
-// 19 - Exercise 3 - Except
+// 19. Exercise 3 - Except
 
 const numbersExcept = [1, 2, 3, 4, 1, 1]
 
 
-
+// with a 'for...in' loop. (here it is looping the index in the array)
 function except(array, excluded) {
     output = []
     for (let element in array)
@@ -2536,6 +2536,7 @@ console.log(except(numbersExcept, [1, 2]))
 
 // Mosh's solution - (same thing but with 'for of' loop)
 
+// with 'for...of' loop. (here it's looping the actual value inside the array)
 function except2(array, excluded) {
     let output = []
     for (element of array)
@@ -2553,7 +2554,6 @@ const numbersPractice1 = [1, 2, 3, 4, 1, 9]
 
 function except3(array, excluded) {
     let output = []
-
     for (element of array)
         if (!excluded.includes(element))
             output.push(element)
@@ -2561,3 +2561,10 @@ function except3(array, excluded) {
 }
 
 console.log(except3(numbersPractice1, [1]))
+
+
+
+///////////////////
+
+// 20. Exercise 4 - Moving an Element
+
