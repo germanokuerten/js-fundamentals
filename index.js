@@ -2547,3 +2547,17 @@ function except2(array, excluded) {
 console.log(except2(numbersExcept, [1, 3]));
 
 
+// Practice
+
+const numbersPractice1 = [1, 2, 3, 4, 1, 9]
+
+function except3(array, excluded) {
+    let output = []
+
+    for (element of array)
+        if (!excluded.includes(element))
+            output.push(element)
+    return ['here:', output]
+}
+
+console.log(except3(numbersPractice1, [1]))
