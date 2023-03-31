@@ -2570,13 +2570,18 @@ console.log(except3(numbersPractice1, [1]))
 
 const numbers4 = [1, 2, 3, 4]
 
-const output4 = move(numbers4, 0, 1)
+const output4 = move(numbers4, 0, 4)
+console.log(output4)
 
 function move(array, index, offset) {
 
-    let index1 = array[index]
-    let newArray = splice(index)
+    let newValue = array.splice(index, 1)
+    array.splice(offset, 0, newValue[0])
 
-
-
+    if (offset >= array.length) 
+        return console.error('Invalid Offset')
+    
+    return array
 }
+
+
