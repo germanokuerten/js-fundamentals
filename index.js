@@ -2568,3 +2568,15 @@ console.log(except3(numbersPractice1, [1]))
 
 // 20. Exercise 4 - Moving an Element
 
+const numbers4 = [1, 2, 3, 4]
+
+const output4 = move(numbers4, 0, 1)
+
+function move(array, index, offset) {
+
+    let index1 = array[index]
+    let newArray = splice(index)
+
+
+
+}
