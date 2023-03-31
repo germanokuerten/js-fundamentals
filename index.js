@@ -2570,18 +2570,40 @@ console.log(except3(numbersPractice1, [1]))
 
 const numbers4 = [1, 2, 3, 4]
 
-const output4 = move(numbers4, 0, 4)
-console.log(output4)
+// const output4 = move(numbers4, 0, 1)
+// console.log(output4)
 
-function move(array, index, offset) {
+// function move(array, index, offset) {
 
-    let newValue = array.splice(index, 1)
-    array.splice(offset, 0, newValue[0])
+//     let newValue = array.splice(index, 1)
+//     array.splice(offset, 0, newValue[0])
 
-    if (offset >= array.length) 
-        return console.error('Invalid Offset')
+//     if (offset >= array.length) 
+//         return console.error('Invalid Offset')
     
-    return array
+//     return array
+// }
+
+
+// Mosh's solution
+
+const output5 = move2(numbers4, 1, 1)
+console.log(output5)
+
+function move2(array, index, offset) {
+
+    const position = index + offset
+    if (position >= array.length || position < 0)
+        return console.error('Invalid Offset')
+
+    const output = [...array]
+    const newValue = output.splice(index, 1)[0]
+    output.splice(position, 0, newValue)
+    return output
 }
 
 
+
+///////////////////
+
+// 21. Exercise 5 - Count Occurrences
