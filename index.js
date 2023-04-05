@@ -2608,4 +2608,23 @@ function move2(array, index, offset) {
 
 // 21. Exercise 5 - Count Occurrences
 
-//
+const numbersOcc = [1, 2, 3, 4, 1, 1]
+
+ const countOcc = countOccurrences(numbersOcc, 1)
+
+ console.log(countOcc)
+
+ function countOccurrences(array, searchElement) {
+
+    let output = []
+
+    for (element of array)
+        if (element === searchElement)
+            output.push(element) 
+    
+    const sum = output.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue
+    }, 0)
+
+    return sum
+ }
