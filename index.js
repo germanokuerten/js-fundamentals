@@ -2610,21 +2610,53 @@ function move2(array, index, offset) {
 
 const numbersOcc = [1, 2, 3, 4, 1, 1]
 
- const countOcc = countOccurrences(numbersOcc, 1)
 
- console.log(countOcc)
+// My solution:
 
- function countOccurrences(array, searchElement) {
+const countOcc = countOccurrences(numbersOcc, 1)
 
-    let output = []
+console.log(countOcc)
 
-    for (element of array)
+function countOccurrences(array, searchElement) {
+
+let output = []
+
+for (element of array)
+    if (element === searchElement)
+        output.push(element) 
+
+const sum = output.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+}, 0)
+
+return sum
+}
+
+
+// Mosh's simple solution
+
+const countMosh = countOccurrences2(numbersOcc, 1)
+
+console.log(countMosh)
+
+function countOccurrences2(array, searchElement) {
+    let count = 0
+    for (let element of array)
         if (element === searchElement)
-            output.push(element) 
-    
-    const sum = output.reduce((accumulator, currentValue) => {
-        return accumulator + currentValue
-    }, 0)
+            count++
+    return `Mosh's solution, ${count}`
+}
 
-    return sum
- }
+
+// Mosh's reduce() method solution
+
+const countMosh2 = countOccurrences3(numbersOcc, 1)
+
+console.log(countMosh2)
+
+function countOccurrences3(array, searchElement) {
+    return array.reduce((accumulator, currentValue) => {
+        const occurrence = (currentValue === searchElement) ? 1 : 0
+        return accumulator + occurrence
+    }, 0)
+}
