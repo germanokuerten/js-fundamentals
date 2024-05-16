@@ -1,182 +1,13 @@
-// a statement: a piece of code that expresses an action to be carried out.
-// for comments we usually write why's and how's for other developers.
-console.log('Hello Mundão');
-
-
 ///////////////////
-// Basics
+// NOTES
 ///////////////////
 
-// 1. Variables
-
-// We use to store data temporarily in a computer’s memory.
-
-// Some rules: 
-
-// single quotes for strings are more commonly used
-// Cannot be a reserved keyword.
-//     - ex: let, if, else, var, const, typeof…
-// The name should be meaningful and descriptive.
-//     - relative to the data
-// Cannot start with a number (ex. 1name)
-// Cannot contain a space of hyphen (-)
-// Variable names are case-sensitive
-// Stick to cammel case notation. (The convention for JS)
-
-let name = 'Germano';
-console.log(name)
-
-let firstName = 'Germano'; 
-let lastName = 'Kuerten';
-
-///////////////////
-
-// 2. Constants
-
-// The value of a constant cannot change.
-// Best practice: if you do not need to reasign, const should be your default choice, otherwise use let.
-
-const interestRate = 0.3;
 
 
-console.log(interestRate)
 
 
-///////////////////
-
-// 3. Primite Types
-
-// Primitives / Value Types:
-// String
-// Number
-// Boolean
-// undefined
-// null
-
-let name2 = 'Germano' // String Literal
-let age = 30 // Number Literal
-let isApproved = false // Boolean Literal
-let firstName2 = undefined;
-let selectedColor = null
-
-// In ES6 there's another primitive, and that is symbol. 
-
-///////////////////
-
-// 4. Dynamic typing
-
-// JavaScript is a dynamic language
-
-// 2 types of languages: Static (statically - typed) or Dynamic (Dynamically - typed)
-
-// In JS all numbers (including "float") are number types.
-
-// undefined is the value here, but also the type.
-
-console.log(typeof(name2))
-console.log(typeof(firstName2))
-console.log(typeof(selectedColor))
-
-///////////////////
-
-// 5. Objects
-
-// Refence Types:
-// - Object
-// - Array
-// - Functions
-
-// Object, a container with properties
-
-// let person = { key value pairs or properties }  -> an object literal
-
-let person = {
-    // key: value
-    name3: 'Germano',
-    age: 34,
-}
-
-// Ways to access the properties:
-
-// Dot Notation (default choice)
-console.log(person.name3)
-
-// Bracket Notation (it has uses, ex: when accessing property dinamically)
-person['name3']
-
-console.log(person);
-
-///////////////////
-
-// 6. Arrays
-
-// List of objects
-
-// A data structure, that we use to represent a list of items
-// (A container/list that holds, items)
-
-// ex: a list of products in a shopping cart
-// or a list of colors the user has selected
-
-let selectedColors = ['red', 'blue']  // array literal (an empty array)
-selectedColors[2] = 55
-
-console.log(selectedColors[0], selectedColors[1]);
-console.log(selectedColors);
-
-// Ps. JS is a dynamic language, so the type of variables can change at runtime. And the same principles applys to arrays.
-
-// So the lenght of arrays as well as the type of object we have in an array are dynamic, and can change.
-
-// In other languages every item or object are the same type in an array, in JS array can store many different types.
-
-// Ps. Technically an Array is an object in JS. So therefore Dot Notation will also work. Therefore it also inherits all the properties of an Object.
-
-// .lenght returns the numbers of items/elements in an array.
-console.log(selectedColors.length);
 
 
-///////////////////
-
-// 7. Functions
-
-// Functions are one of the fundamental building blocks in JS.
-// A Function is basically a set of statements that performs a task or calculates (and returns) a value.
-
-// The syntax: declare a function, using the function keyword
-
-            // name here is a parameter (a variable that is only meaningful inside of this function)
-function greet(name, lastName) {
-    console.log('Hello ' + name + ' ' + lastName);
-}
-
-// The input here is an argument (the value we suply for the function parameter)
-greet('Mano', 'Kuerten')
-greet('Manu')
-
-
-///////////////////
-
-// 8. Types of Functions
-
-
-// Performing a task (in this case to display something in the console)
-function greetExample(name, lastName) {
-    console.log('Hello ' + name + ' ' + lastName);
-}
-
-greetExample()
-
-// Calculates a value
-function square(number) {
-    return number * number
-}
-
-let numberExample = square(2)
-console.log(numberExample)
-
-
-// A real world application is essentially a collection of hundreds or thousands of functions working together to provide the functionality of that application
 
 
 ///////////////////
@@ -1958,7 +1789,7 @@ console.log(numbersArray);
 
 // Middle: .splice(starting position, how many to delete, what you want to add?)
 numbersArray.splice(2, 0, 'a', 'b', 'c', 99, 100)
-console.log(numbersArray);
+console.log("look at me", numbersArray);
 
 
 ///////////////////
