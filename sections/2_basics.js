@@ -124,9 +124,17 @@ person['name'] = 'Germanus'
 console.log(person.name);
 console.log(person);
 
+let selection = 'speed'
+car[selection] = '6.11'
+
+console.log(car.speed + " = 2nd speed")
+
 ///////////////////
 
+///////////////////
 // 6. Arrays
+///////////////////
+
 
 // List of objects
 
@@ -137,7 +145,14 @@ console.log(person);
 // or a list of colors the user has selected
 
 let selectedColors = ['red', 'blue']  // array literal (an empty array)
-selectedColors[2] = 55
+selectedColors[3] = 55
+
+let selectedColors2 = ['white', 'black']
+
+console.log(typeof selectedColor + " is the type")
+
+console.log(selectedColors2)
+console.log('length =', selectedColors2.length)
 
 console.log(selectedColors[0], selectedColors[1]);
 console.log(selectedColors);
@@ -156,22 +171,38 @@ console.log(selectedColors.length);
 
 ///////////////////
 
+
+///////////////////
 // 7. Functions
+///////////////////
+
 
 // Functions are one of the fundamental building blocks in JS.
 // A Function is basically a set of statements that performs a task or calculates (and returns) a value.
 
 // The syntax: declare a function, using the function keyword
 
-            // name here is a parameter (a variable that is only meaningful inside of this function)
+            // name here is a PARAMETER (a variable that is only meaningful inside of this function)
 function greet(name, lastName) {
     console.log('Hello ' + name + ' ' + lastName);
 }
 
-// The input here is an argument (the value we suply for the function parameter)
+// The input here is an ARGUMENT (the value we suply for the function parameter)
 greet('Mano', 'Kuerten')
 greet('Manu')
 
+function function1() {
+
+}
+
+// Practice
+
+function test1(name, lastName) {
+                            // concatinations
+    console.log("Hello Mundão " + name + ' ' + lastName)
+}
+
+test1("Germano", 'Kuerten')
 
 ///////////////////
 
@@ -195,3 +226,12 @@ console.log(numberExample)
 
 
 // A real world application is essentially a collection of hundreds or thousands of functions working together to provide the functionality of that application
+
+// A set of statements that either performs a task (in this case to display something in the console) or calculates and returns a value
+
+function number2(number) {
+    return number * number
+}
+
+let number2example = number2(4)
+console.log(number2example);
