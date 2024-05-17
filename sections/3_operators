@@ -6,16 +6,19 @@
 
 // The different types of operators in JS
 
-// Arithmetic
+// Arithmetic - (to perform calculations / Math)
 // Assignment 
 // Comparison
 // Logical 
 // Bitwise
 
 
+// ps. An expression is something that produces a value
+
+///////////////////
+// 2. Arithmetic Operators
 ///////////////////
 
-// 2. Arithmetic Operators
 
 let x = 10
 let y = 3
@@ -31,8 +34,10 @@ console.log(x ** y) // Exponentiation (x to the power of y)
 // Increment (++)
 console.log(x) // x is 10
 
+console.log(++x, " = this should be 11")  // ++ (increments 1) and x is now 11 and will log 11.
+
 console.log(x++)  // x will log 10, but is actually 11 after ++
-console.log(++x)  // ++ (increments 1) and x is now 12 and will log 12.
+
 
 // Decrement (--)
 console.log(--x) // here it decrements 1, so x is now 11.
@@ -41,8 +46,9 @@ console.log(x)   // so now x is 10.
 
 
 ///////////////////
-
 // 3. Assignment Operator
+///////////////////
+
 
 let z = 10
 
@@ -58,8 +64,10 @@ z *= 3
 
 
 ///////////////////
-
 // 4. Comparison Operators
+///////////////////
+
+
 console.log('Comparison Operators');
 
 x = 1
