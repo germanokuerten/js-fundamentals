@@ -49,6 +49,7 @@ console.log(x)   // so now x is 10.
 // 3. Assignment Operator
 ///////////////////
 
+console.log("Assignment Operators             ______________")
 
 let z = 10
 
@@ -62,15 +63,22 @@ z += 5
 z = z * 3
 z *= 3
 
+// Practice
+2
+let k = 10
+k += 5
+console.log(k)
 
-///////////////////
+
+/////////////////////////////
 // 4. Comparison Operators
-///////////////////
+/////////////////////////////
 
 
 console.log('Comparison Operators');
 
 x = 1
+console.log(x)
 
 // Relational
 
@@ -84,28 +92,34 @@ console.log(x < 1); // false
 console.log(x <= 1); // true
 
 // Equality 
+
+// Equal to
 console.log(x === 1); // true
+// Not equal to
 console.log(x !== 1); // false
 
 
-///////////////////
-
+/////////////////////////////
 // 5. Equality Operators
+/////////////////////////////
+
 console.log('Equality Operators');
 
 // Strict Equality (same type + value)
 console.log(1 === 1);
 
-// Lose Equality (// it converts the type of the right to match the type of the left) (and only checks for the value)
+// Loose Equality (// it converts the type of the right to match the type of the left) (and only checks for the value)
 console.log(1 == 1); // true
 console.log('1' == 1); // true
-console.log(0 == true);
-console.log(1 == true); 
+console.log(0 == true); // false
+console.log(1 == true); // true
+
+// Most of the time you should be using the Strict Equality operator.
 
 
-///////////////////
-
+/////////////////////////
 // 6. Ternary Operator
+/////////////////////////
 
 // if a customer ha more than 100 points,
 // they are a 'gold' customer, 
@@ -114,12 +128,19 @@ console.log(1 == true);
 let points = 110;
 let kind = points > 100 ? 'gold' : 'silver';
 
-console.log(kind);
+console.log("customer is a " + kind + " customer");
 
 
-///////////////////
 
+//////////////////////////
 // 7. Logical Operators
+//////////////////////////
+
+// AND (&&)
+// OR (||)
+// NOT (!)
+
+
 console.log('Logical Operators');
 
 // Logical AND (&&)
@@ -143,9 +164,10 @@ let applicationRefused = !eligibleForLoan
 console.log('Refused:', applicationRefused);
 
 
-///////////////////
 
+//////////////////////////////////////
 // 8. Logical Operators with Non-booleans
+//////////////////////////////////////
 
 console.log(false || true); // returns true
 console.log(false || 'Mano') // returns "Mano"
@@ -157,7 +179,7 @@ console.log(false || 1) // returns 1
 // 0
 // false
 // ''
-// NaN
+// NaN (not a number)
 
 // With the logical OR || operators as soon as we find a value that is truthy that operand is returned, and this is called short-circuiting.
 
@@ -173,8 +195,8 @@ console.log(currentColor)
 
 
 ///////////////////
-
 // 9. Bitwise Operators
+///////////////////
 
 // Humans use the decimal system
 // but machines use binary system (1's and 0's)
@@ -194,9 +216,9 @@ console.log(1 & 2);  // Bitwise AND   (if both numbers are 1, 1 will be returned
 ///
 
 // Read, Write, Execute
-// 00000100
-// 00000010
-// 00000111
+// 00000100 // only read
+// 00000010 // only write
+// 00000001 // only execute
 
 const readPermission = 4
 const writePermission = 2
@@ -213,9 +235,9 @@ let message = (myPermission & readPermission) ? 'yes' : 'no'
 console.log(message);
 
 
-///////////////////
-
+///////////////////////////
 // 9. Operators Precedence
+///////////////////////////
 
 let x1 = 2 + 3 * 4;
 console.log(x1);  // result is 14
@@ -281,6 +303,13 @@ let x8 = 10
 let y8 = x8++    // ++ gets computed after x8 is computed into y8
 
 console.log('y8 is ', y8);
+console.log('y8 is ', y8);
+console.log('x8 is ', x8);
+
+// but then now y8 will be 11
+y8 = x8
+console.log('y8 now is ', y8);
+
 
 // 10. What is the value of y9?
 
@@ -290,17 +319,37 @@ let y9 = x9 !== 2
 console.log('1 not equal to 2', y9);
 
 
-/////////////////// 
+// /////////////////// 
 
-// 12. Exercise 
+// // 12. Exercise 
+
+// let a = 'red'
+// let b = 'blue'
+
+// let c = b
+
+// b = a
+// a = c
+
+// console.log(a);
+// console.log(b);
+
+
+
+
+
+// 
 
 let a = 'red'
 let b = 'blue'
 
-let c = b
+// a = b 
+// b = (b === a) ? 'red' : 'blue'
 
-b = a
-a = c
+c = a
 
-console.log(a);
-console.log(b);
+a = b
+b = c
+
+console.log(a)
+console.log(b)
