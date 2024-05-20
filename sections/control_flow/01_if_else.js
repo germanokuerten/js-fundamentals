@@ -3,6 +3,7 @@
 ///////////////////
 
 // Conditional Statements (In JS)
+
 // If... else
 // Switch... case
 
@@ -16,28 +17,48 @@
 
 // Ps. for neatness, when using a single statement you can get rid of the curly braces.
 
-let hour = 22
+// {} = block of code
 
-let print = console.log()
+// let hour = 22
 
-if (hour >= 6 && hour < 12) 
-    console.log('Good Morning!')
-else if (hour >= 12 && hour < 18) 
-    console.log('Good Afternon')
-else 
-    console.log('Good Evening!')
+// let print = console.log()
+
+// if (hour >= 6 && hour < 12) 
+//     console.log('Good Morning!')
+// else if (hour >= 12 && hour < 18) 
+//     console.log('Good Afternon')
+// else 
+//     console.log('Good Evening!')
 
 
 // ex. 2
-let hour2 = 6
+// let hour2 = 6
 
-if (true) {
+// if (true) {
 
+// }
+// else if (true) {
+
+// }
+// else if (false) {
+
+// }
+// else statement 
+
+
+
+// Practice
+
+
+
+let hour = 12.1
+
+if (hour >= 6 && hour < 12) {
+    console.log('Good morning!')
 }
-else if (true) {
-
+else if (hour >= 12 && hour < 18) {
+    console.log('Good afternoon!')
 }
-else if (false) {
+else 
+    console.log('Good evening!')
 
-}
-else statement 
