@@ -7,10 +7,11 @@
 
 //Examples. 
 
-let i = 0
-while (i < 5) {
-    console.log(i)   
-}
+// let i = 0
+// while (i < 5) {
+//     console.log(i)   
+//     // i++
+// }
 
 // while (true){
 // }
@@ -24,8 +25,8 @@ while (i < 5) {
 // } while (x < 5)
 
 
-// for (let i = 1; i > 0; i++) {
-//     console.log('infinite:', i)
-// }
+for (let i = 11; i >= 10; i++) {
+    console.log('infinite:', i)
+}
 
 // So avoid infinite loops.
