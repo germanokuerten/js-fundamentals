@@ -39,6 +39,7 @@ for (let index in colors) {
     console.log(index, colors[index])
 }
 
+console.log('----------')
 
 
 /////////////
@@ -50,5 +51,9 @@ for (let index in colors) {
 const person = {
     name: 'Germano',
     age: 30
+}
+
+for (key in person) {
+    console.log(key)
 }
 
