@@ -29,7 +29,7 @@ console.log(person1.name)
 console.log(person1['name'])
 
 
-// so this is the for in loop and we use it to iterate over the properties of an object. 
+// so this is the "for in" loop and we use it to iterate over the properties of an object. 
 
 // ps. we can also use this to iterate over an array, but it's not ideal. But below is an example.
 
@@ -40,6 +40,8 @@ for (let index in colors) {
 }
 
 console.log('----------')
+
+// ps. for-of loop is ideal to iterate over arrays.
 
 
 /////////////
@@ -54,6 +56,7 @@ const person = {
 }
 
 for (key in person) {
-    console.log(key)
+    // console.log(key)
+    console.log(key, person[key]);
 }
 
