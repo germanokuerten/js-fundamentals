@@ -1,6 +1,7 @@
-///////////////////
-
+///////////////////////
 // 8. For...of loop
+///////////////////////
+
 
 // for-of loop is the ideal way to iterate over arrays
 
